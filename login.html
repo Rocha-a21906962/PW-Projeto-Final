@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/navigator-logo.png" />
+    <link href="styles/style.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/23f7021f91.js"></script>
+    <title>Winecense</title>
+</head>
+<body>
+<nav class="menu">
+    <div class="left-menu">
+        <a class="logo" href="homepage.html"><img src="images/winecense_logo-removed-bg.png"/></a>
+        <a class="menu-options" href="wines.html">Wines</a>
+        <a class="menu-options" href="about.html">About</a>
+    </div>
+    <div class="right-menu">
+        <a class="profile" href="#">User</a>
+        <a class="login-logout" href="#">Login/Logout</a>
+    </div>
+</nav>
+
+<section class="section-login"> <!--  -->
+    <div class="container">
+        <div class="row"> <!--  -->
+            <div class="wrapper"> <!--  -->
+                <div class="inner-container"> <!--  -->
+                    <div class="image" style="background-image: url(images/login-photo.jpg);">
+                    </div> <!--  -->
+                    <div class="text-container"> <!--  -->
+                        <div class="header-container"> <!--  -->
+                            <div class="header-element"> <!--  -->
+                                <h3 class="header-title">Log In</h3> <!--  -->
+                            </div>
+                            <div class="header-element"> <!--  -->
+                                <p class="social-media">
+                                    <a href="#"
+                                       class="social-icon"><span
+                                            class="fa fa-facebook"></span></a>
+                                    <a href="#"
+                                       class="social-icon"><span
+                                            class="fa fa-twitter"></span></a>
+                                </p>
+                            </div>
+                        </div>
+                        <form action="#" class="signin-form">
+                            <div class="form-fields"> <!--  -->
+                                <label class="label" for="name">Username</label>
+                                <input type="text" class="form-input" placeholder="Username" required> <!-- form-input -->
+                            </div>
+                            <div class="form-fields"> <!-- form-fields -->
+                                <label class="label" for="password">Password</label>
+                                <input type="password" class="form-input" placeholder="Password" required> <!--  -->
+                            </div>
+                            <div class="form-fields"> <!--  -->
+                                <button class="login-button">Log in</button>
+                            </div>
+                            <div class="form-footer"> <!--  -->
+                                <div class="form-checkbox"> <!--  -->
+                                    <label class="form-checkbox-label">Remember Me
+                                        <input type="checkbox" checked>
+                                        <span class="checkmark"></span>
+                                    </label> <!--  -->
+                                </div>
+                                <div class="form-recovery"> <!--  -->
+                                    <a href="#">Forgot Password</a>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- text-footer -->
+                        <p class="text-footer">Not a member? <a data-toggle="tab" href="#"> Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

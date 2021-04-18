@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/navigator-logo.png" />
+    <script src="https://use.fontawesome.com/23f7021f91.js"></script>
+    <title>Winecense</title>
+</head>
+<body>
+<nav class="menu">
+    <div class="left-menu">
+        <a class="logo" href="homepage.html"><img src="images/winecense_logo-removed-bg.png"/></a>
+        <a class="menu-options" href="wines.html">Wines</a>
+        <a class="menu-options" href="about.html">About</a>
+    </div>
+    <div class="right-menu">
+        <a class="profile" href="#">User</a>
+        <a class="login-logout" href="login.html">Login/Logout</a>
+    </div>
+</nav>
+<div class="detail-container">
+    <div class="wine-info">
+        <div class="detail-container-left">
+            <div class="img-detail-container">
+                <img src="images/test_wine.png" alt="Test Wine"/>
+            </div>
+            <div class="rank-contents">
+                <p class="rank"><i class="fa fa-bar-chart"></i>Rank</p>
+                <div class="rank-separator"></div>
+                <p><span class="rank-nr">Nº X
+                </span> Trending</p>
+            </div>
+            <div class="darker-background"></div>
+        </div>
+
+
+        <div class="detail-container-right">
+            <h2 class="producer-title"><i>Adega De Teste</i></h2>
+            <h1 class="detail-title">Test Wine</h1>
+
+            <a class="wine-type" href="#">Wine,</a>
+            <a class="wine-type" href="#">Red Wine,</a>
+            <a class="wine-type" href="#">Drink</a>
+
+            <p class="detail-description">Fermented in stainless steel and aged in new French wood, Test Wine results from of 60-year-old Cabernet Sauvignonat. Very refined, harmonious, nuanced white with salinity and grapefruit. Drink 2020-2030</p>
+            <h3 class="grapes-title">Grapes</h3>
+            <div class="grape-list">
+                <div class="grape">
+                    <div class="grape-image">
+                        <img src="images/grapes.jpg" alt="Cabernet Sauvignon"/>
+                    </div>
+                    <div class="grape-info">
+                        <h3>Cabernet Sauvignon</h3>
+                        <p>Cabernet Sauvignon is one of the world's most widely recognized red wine grape varieties. It is grown in nearly every major wine producing country among a diverse spectrum of climates from Canada's Okanagan Valley to Lebanon's Beqaa Valley.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wine-info">
+        <div class="detail-container-left">
+            <div class="wine-stats">
+                <div class="ratings-detail">
+                    <div class="score-detail">
+                        <b>4.0</b>/5
+                    </div>
+                    <div class="ratings-count">
+                        69 reviews
+                    </div>
+                </div>
+                <div class="wine-views">
+                    14 <i class="fa fa-eye"></i>
+                </div>
+            </div>
+            <h3>Evaluate this wine</h3>
+            <form action="post">
+                <textarea name="eval" rows="10" cols="30"></textarea>
+                <br><br>
+                <label for="qty">Score (between 1 and 5):</label>
+                <input type="number" id="qty" name="qty" min="1" max="5">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="detail-container-right">
+
+            <h3>Similar Recommendations</h3>
+
+            <p><a href="#"> Other Wine 1 </a></p>
+            <p><a href="#"> Other Wine 2 </a></p>
+            <p><a href="#"> Other Wine 3 </a></p>
+
+            <h3>About Adega de Teste</h3>
+
+            <p>Em parte, devido às características peculiares dos seus terrenos, investimentos no cooperativismo e desvalorizações das suas tradições, mas principalmente pelo abandono das atividades agrícolas por força do desenvolvimento.
+                Passado esse, que tem contado com a família Manz para o recuperar e revitalizar. Tornando o velho em novo e voltando a renascer tradições bem valiosas.
+                Neste pequeno paraíso vitivinícola, encontramos a nossa “perfect storm”. Encostas, de clima temperado, com influências do mar e da serra e um solo bastante mineralizado.</p>
+
+            <p>Address: Cheleiros, Lisboa</p>
+
+            <a href="https://manzwine.com/">Website</a>
+
+            <div class="list-container">
+                <div class="list-element">
+                    <div class="wine-bottle-image">
+                        <img src="images/red-wine.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1 class="title">Latest evaluations</h1>
+
+<section class="evaluations">
+
+    <div class="evaluations-wrapper">
+
+        <!-- eval 1 -->
+        <div class="evaluation">
+            <div class="evaluation-header">
+                <div class="user">
+                    <div class="user-image">
+                        <img src="images/user-pic.jpg"/>
+                    </div>
+                    <div class="user-details">
+                        <h1><strong>Name</strong></h1>
+                        <span>username</span>
+                    </div>
+                </div>
+                <div class="score">
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="comment">
+                <p>Too expensive for the quality, don't recommend.</p>
+            </div>
+        </div>
+
+        <!-- eval 2 -->
+        <div class="evaluation">
+            <div class="evaluation-header">
+                <div class="user">
+                    <div class="user-image">
+                        <img src="images/user-pic.jpg"/>
+                    </div>
+                    <div class="user-details">
+                        <h1><strong>Name</strong></h1>
+                        <span>username</span>
+                    </div>
+                </div>
+                <div class="score">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+            <div class="comment">
+                <p>Amazing! Personality-filled, pleasant, refined, rich, ripe.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+</body>
+</html>
