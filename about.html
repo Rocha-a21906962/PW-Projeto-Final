@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="António Rocha & Beatriz Rodrigues">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
@@ -23,168 +24,38 @@
         <a class="login-logout" href="login.html">Login/Logout</a>
     </div>
 </nav>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7gquYRxLMFI" title="Wine Production" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-</iframe>
-<img src="images/wordcloud.jpg" alt="Wordcloud" style="width: 500px; height: 375px">
-<img src="images/PagesMap.svg" alt="Website Map w/Pages">
-<form
-        method="post"
-        onsubmit="return false"
-        oninput="amount.value = (principal.valueAsNumber * rate.valueAsNumber) / 100"
->
-    <fieldset>
-        <legend>Calculatora de preço de voo após preencher o quizz</legend>
-        <label for="principal">Preço da Tap: (em €)</label>
-        <input
-                type="number"
-                min="0"
-                id="principal"
-                name="principal"
-                value="300"
-        />
-        <p>
-            <label for="rate">Disconto desejado: </label>
-            <input
-                    type="range"
-                    min="0"
-                    max="20"
-                    id="rate"
-                    name="rate"
-                    value="0"
-                    oninput="thisRate.value = rate.value"
-            />
-            <output name="thisRate" for="range">0</output><span>%</span>
-        </p>
-        <p>
-            Desconto Recebido:
-            <strong
-            >$<output name="amount" for="principal rate">0</output></strong
-            >
-
-            <input type="submit" value="Calcular" />
-        </p>
-    </fieldset>
-</form>
-
-<form action="p6069@ulusofona.pt" method="post" autocomplete="on">
-    <fieldset>
-        <legend>Quizz</legend>
-        <fieldset>
-            <legend>Dados Pessoais:</legend>
-            <p>
-                Nome: <input type="text" id="nome" name="nome" required autofocus />
-            </p>
-            <p>Apelido: <input type="text" id="apelido" name="apelido" /></p>
-            <p>
-                Email:
-                <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="xyz@gmail.com"
-                />
-            </p>
-            <p>
-                <label for="postal-code">Codigo-Postal:</label>
-                <input
-                        type="text"
-                        id="postal-code-1"
-                        name="postal-code-1"
-                        maxlength="4"
-                        size="4"
-                        placeholder="1234"
-                />
-                -
-                <input
-                        type="text"
-                        id="postal-code-2"
-                        name="postal-code-2"
-                        maxlength="3"
-                        size="3"
-                        placeholder="567"
-                />
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>Acerca da cidade:</legend>
-            <input type="image" id="" name="" />
-            <p>Já estiveste alguma vez na Antuérpia?</p>
-            <input type="radio" id="nao" name="visita" value="nao" />
-            <label for="nao">Não</label><br />
-            <input type="radio" id="sim" name="visita" value="sim" />
-            <label for="sim">Sim</label><br />
-            <input type="radio" id="outro" name="visita" value="outro" />
-            <label for="outro">Não me recordo</label>
-            <br />
-            <label for="favcolor"
-            >Qual a cor predominante na bandeira da bélgica:</label
-            >
-            <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
-            <p>Existe alguem especial na tua vida?</p>
-            <input type="checkbox" id="opcao1" name="opcao1" value="animal" />
-            <label for="vehicle1"> Eu tenho um gato</label><br />
-            <input type="checkbox" id="opcao2" name="opcao2" value="prof" />
-            <label for="vehicle2"> So tenho tempo para estudar</label><br />
-            <input type="checkbox" id="opcao3" name="opcao3" value="ninguem" />
-            <label for="opcao3"> Não gosto dessas coisas</label><br /><br />
-            <p>Que dia é hoje?</p>
-            <input type="date" id="today" name="today" />
-            <p>Quando tens férias?</p>
-            <label for="epoca">Época:</label>
-            <select name="epoca" id="epoca" multiple>
-                <option value="pascoa">Pascoa</option>
-                <option value="verao">Verão</option>
-                <option value="natal">Natal</option>
-                <option value="outro">Outro</option>
-            </select>
-            <br />
-            <p>Como gostarias de visitar a cidade?</p>
-            <label for="transportes">Transporte favorito:</label>
-            <select name="transportes" id="transportes">
-                <option value="carro">Carro</option>
-                <option value="barco">Barco</option>
-                <option value="comboio">Comboio</option>
-                <option value="avião">Avião</option>
-            </select>
-            <br />
-            <br />
-            <label for="local">Que local gostarias de visitar primeiro:</label>
-            <input list="locais" name="local" id="local" />
-            <datalist id="locais">
-                <option value="A praça Grote Markt"></option>
-                <option value="O museu Sint-Pauluskerk"></option>
-                <option value="Porto de Antuérpia"></option>
-                <option value="Zoo de Antuérpia"></option>
-                <option value="A estação de comboios"></option>
-            </datalist>
-            <br />
-            <p>
-                Classifica este quizz:
-                <input
-                        type="number"
-                        id="points"
-                        name="points"
-                        step="1"
-                        min="1"
-                        max="10"
-                />
-            </p>
-            <p>Notas relevantes:<br /><textarea></textarea></p>
-            <p>
-                <input type="reset" value="Limpar" />
-                <input
-                        type="image"
-                        src="./images/navigator-logo.png"
-                        alt="Submit"
-                        width="48"
-                        height="48"
-                />
-                <input type="submit" value="Submeter" />
-            </p>
-        </fieldset>
-    </fieldset>
-</form>
+<h1 class="title">About Wine Production in Portugal:</h1>
+<section class="container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7gquYRxLMFI" title="Wine Production"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
+</section>
+<h1 class="title">Our website roadmap:</h1>
+<br></br>
+<section class="container">
+    <img src="images/PagesMap.svg" alt="Website Map w/Pages">
+</section>
+<h1 class="title">Our website layouts:</h1>
+<br></br>
+<section class="container">
+    <img src="images/Homepage-Layout.png" alt="Layout ">
+    <img src="images/Login-Layout.png" alt="Layout ">
+    <img src="images/Wine-List-Layout.png" alt="Layout ">
+    <img src="images/Wine-Detail-Layout.png" alt="Layout ">
+</section>
+<h1 class="title">Tecnicas usadas:</h1>
+<br></br>
+<section class="container">
+    <p>Flexbox</p>
+    <p>Grid</p>
+    <p>...</p>
+</section>
+<h1 class="title">Wordcloud:</h1>
+<br></br>
+<section class="container">
+    <img src="images/wordcloud.jpg" alt="Wordcloud" style="width: 500px; height: 375px">
+</section>
 </body>
 </html>
